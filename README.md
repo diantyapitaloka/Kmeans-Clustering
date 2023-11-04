@@ -31,7 +31,7 @@ Display data that has been preprocessed.
 After preprocessing by changing the column names to make them more uniform, the results are as below.
 ![image](https://github.com/diantyapitaloka/Kmeans-Clustering/assets/147487436/7b5791e0-9fc0-45be-b529-0e8a051fcb34)
 
-## Import K Means
+## Import KMeans
 In the next stage we will import K-Means. At this stage we will also remove the Customer ID and gender columns because they are less relevant for the clustering process. Next, we will determine the optimal K value using the Elbow method. The K-means library from SKLearn provides a function to calculate the inertia of K-Means with a certain number of K. Here we will create a list containing the inertia of K values between 1 and 11.
 
 - from sklearn.cluster import KMeans
@@ -74,7 +74,7 @@ Create a KMeans object
 Add a label column to the dataset
 - X['Labels'] = km5.labels_
 
-## Create K Means Plot
+## Create KMeans Plot
 Create a KMeans plot with 5 clusters
 - plt.figure(figsize=(8,4))
 - sns.scatterplot(x=X['annual_income'], y=X['spending_score']
