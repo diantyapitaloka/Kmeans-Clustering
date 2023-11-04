@@ -40,4 +40,39 @@ Create a list containing inertia.
 - km = KMeans(n_clusters=i).fit(X)
 - clusters.append(km.inertia_)
 
+Run the code below to create an inertia plot for each K value. According to the plot below, we can see that the elbow is at a K value equal to 5, where the decrease in inertia is no longer significant after the K value equals 5. Don't forget to import the library needed to create a plot.
+
+- import matplotlib.pyplot as plt
+- %matplotlib inline
+- import seaborn as sns
+ 
+Create an inertia plot
+- fig, ax = plt.subplots(figsize=(8, 4))
+- sns.lineplot(x=list(range(1, 11)), y=clusters, ax=ax)
+- ax.set_title('Search Elbow')
+- ax.set_xlabel('Clusters')
+- ax.set_ylabel('Inertia')
+
+The results of the code above display an inertia plot as follows.
+![image](https://github.com/diantyapitaloka/Kmeans-Clustering/assets/147487436/b3e48bfb-9f25-49a7-bd02-21f8f597a839)
+
+Finally, we can retrain K-Means with the number of K obtained from the Elbow method. Then we can plot the K-Means clustering results by running the code below.
+
+Create a KMeans object
+- km5 = KMeans(n_clusters=5).fit(X)
+ 
+Add a label column to the dataset
+- X['Labels'] = km5.labels_
+ 
+Create a KMeans plot with 5 clusters
+- plt.figure(figsize=(8,4))
+- sns.scatterplot(x=X['annual_income'], y=X['spending_score']
+- hue=X['Labels'],
+- palette=sns.color_palette('hls', 5))
+- plt.title('KMeans with 5 Clusters')
+- plt.show()
+
+So if the code above is executed, the KMeans display with 5 clusters will look like the one below.
+![image](https://github.com/diantyapitaloka/Kmeans-Clustering/assets/147487436/e3e010f9-3c96-470f-b000-e327bfa06444)
+
 
