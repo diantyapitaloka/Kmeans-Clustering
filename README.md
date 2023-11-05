@@ -83,7 +83,7 @@ Create a KMeans plot with 5 clusters
 - plt.title('KMeans with 5 Clusters')
 - plt.show()
 
-## Output
+## ⛄🌀⭐ Output ⭐🌀⛄
 So if the code above is executed, the KMeans display with 5 clusters will look like the one below.
 ![image](https://github.com/diantyapitaloka/Kmeans-Clustering/assets/147487436/6bf9a724-dc93-47d8-aecb-f3219f455ef1)
 
