@@ -113,6 +113,7 @@ plt.show()
 
 ## ⛄🌀⭐ Output ⭐🌀⛄
 So if the code above is executed, the KMeans display with 5 clusters will look like the one below.
+The Output is :
 ![image](https://github.com/diantyapitaloka/Kmeans-Clustering/assets/147487436/6bf9a724-dc93-47d8-aecb-f3219f455ef1)
 
 
