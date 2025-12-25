@@ -1,6 +1,6 @@
 ## ⛄🌀⭐ Kmeans Clustering ⭐🌀⛄
 - Before running the model, you need to decide how many groups (clusters) actually exist in your mall data. The most common method is the Elbow Method. You calculate the Within-Cluster Sum of Squares (WCSS) for different values of $k$ and plot them. The point where the rate of decrease sharply slows down (forming an "elbow") indicates the ideal number of clusters.
-Creating an unsupervised learning model using the K-Means Clustering technique. Data on visitors from a mall.
+- Creating an unsupervised learning model using the K-Means Clustering technique. Data on visitors from a mall.
 ```
 import pandas as pd
 ```
