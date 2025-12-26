@@ -2,6 +2,7 @@
 - Before running the model, you need to decide how many groups (clusters) actually exist in your mall data. The most common method is the Elbow Method. You calculate the Within-Cluster Sum of Squares (WCSS) for different values of $k$ and plot them. The point where the rate of decrease sharply slows down (forming an "elbow") indicates the ideal number of clusters.
 - Strategic Segment Profiling: Once the algorithm converges, you can visualize the results on a scatter plot to identify distinct behavioral archetypes—such as High Earners/High Spenders or Low Earners/Low Spenders—allowing the mall management to create highly personalized marketing campaigns for each unique group.
 - Creating an unsupervised learning model using the K-Means Clustering technique. Data on visitors from a mall.
+- Optimal Cluster Selection: Before running the model, you must determine the ideal number of groups ($k$) using the Elbow Method. By plotting the Within-Cluster Sum of Squares (WCSS) against various values of $k$, you identify the "elbow" point where adding more clusters no longer significantly improves the model's tightness.
 ```
 import pandas as pd
 ```
