@@ -3,6 +3,7 @@
 - Strategic Segment Profiling: Once the algorithm converges, you can visualize the results on a scatter plot to identify distinct behavioral archetypes—such as High Earners/High Spenders or Low Earners/Low Spenders—allowing the mall management to create highly personalized marketing campaigns for each unique group.
 - Creating an unsupervised learning model using the K-Means Clustering technique. Data on visitors from a mall.
 - Optimal Cluster Selection: Before running the model, you must determine the ideal number of groups ($k$) using the Elbow Method. By plotting the Within-Cluster Sum of Squares (WCSS) against various values of $k$, you identify the "elbow" point where adding more clusters no longer significantly improves the model's tightness.
+- Centroid Initialization and Iteration: The algorithm begins by placing $k$ random centroids in the data space and assigning each customer to the nearest one. It then iteratively recalculates the center of each group and reassigns points until the clusters become stable and the total variance is minimized.
 ```
 import pandas as pd
 ```
