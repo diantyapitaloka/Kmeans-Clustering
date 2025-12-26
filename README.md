@@ -6,6 +6,7 @@
 - Centroid Initialization and Iteration: The algorithm begins by placing $k$ random centroids in the data space and assigning each customer to the nearest one. It then iteratively recalculates the center of each group and reassigns points until the clusters become stable and the total variance is minimized.
 - Strategic Segment Profiling: Once the algorithm converges, you can visualize the results on a scatter plot to identify distinct behavioral archetypes. This allows mall management to distinguish between groups like High Earners/High Spenders and Low Earners/Low Spenders, facilitating highly personalized marketing campaigns.
 - Distance-Based Logic: The model relies on calculating the Euclidean distance between data points to ensure that customers within a group are as similar as possible. Because this math is sensitive to scale, it is crucial to normalize your data (like income and age) so that one feature doesn't disproportionately influence the groupings.
+- Actionable Business Insights: Beyond simple grouping, K-means provides the "coordinates" of your average customer in each segment to help predict future behavior. These insights enable precision targeting, such as offering luxury rewards to top-tier spenders while sending discount coupons to price-sensitive clusters.
 ```
 import pandas as pd
 ```
