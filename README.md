@@ -27,6 +27,7 @@
 - Strategic Segment Profiling: Once the algorithm converges, you can visualize the results on a scatter plot to identify distinct behavioral archetypes. This allows mall management to distinguish between groups like High Earners/High Spenders and Low Earners/Low Spenders, facilitating highly personalized marketing campaigns.
 - Distance-Based Logic: The model relies on calculating the Euclidean distance between data points to ensure that customers within a group are as similar as possible. Because this math is sensitive to scale, it is crucial to normalize your data (like income and age) so that one feature doesn't disproportionately influence the groupings.
 - Actionable Business Insights: Beyond simple grouping, K-means provides the "coordinates" of your average customer in each segment to help predict future behavior. These insights enable precision targeting, such as offering luxury rewards to top-tier spenders while sending discount coupons to price-sensitive clusters.
+- K-Means naturally tries to create spherical (circular) clusters of similar sizes. If your mall data actually has elongated or "U-shaped" distributions (e.g., a group of shoppers that bridges two different spending tiers), K-Means will struggle. It will try to "cut" those shapes into circles, which might misrepresent the actual flow of your customer base.
 ```
 import pandas as pd
 ```
